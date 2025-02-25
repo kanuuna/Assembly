@@ -1,13 +1,13 @@
 ;Simple Assembly code that send the string 'Hello World!' to StdOutput
 
-section .data
+SECTION .data
 	message:     db 'Hello World!',10   
 	mLen:  equ $-message
 
-section .text
-	global _start
+SECTION .text
+	global _startApp
 
-_start:
+_startApp:
 	mov eax,4
 	mov ebx,1
 	mov ecx,message
