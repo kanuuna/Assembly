@@ -8,11 +8,11 @@ SECTION .text
 	global _startApp
 
 _startApp:
-	mov eax,4
-	mov ebx,1
-	mov ecx,message
-	mov edx,mLen
-	int 80h     
-	mov eax,1
-	mov ebx,0
-	int 80h
+    mov eax,4
+    mov ebx,1
+    mov ecx,message
+    mov edx,mLen
+    int 80h     
+    mov eax,1
+    mov ebx,0
+    int 80h
